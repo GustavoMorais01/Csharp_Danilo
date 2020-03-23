@@ -26,5 +26,20 @@ namespace Aula_23_windows_form
         {
             txt_resultado.Text = "Ola Gustavo! Vc é foda camarada!!!";
         }
+
+        private void txt_resultado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            var form = new FrmShow();
+
+            // Pega o que for digitado no label do form1 e mostrar no label do FrmShow
+            form.lblMensagem.Text = txt_resultado.Text;
+            form.Show();
+
+        }
     }
 }
