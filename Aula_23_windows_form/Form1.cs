@@ -16,5 +16,15 @@ namespace Aula_23_windows_form
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ok_Click(object sender, EventArgs e)
+        {
+            txt_resultado.Text = "Ola Gustavo! Vc é foda camarada!!!";
+        }
     }
 }
