@@ -17,9 +17,10 @@ namespace Aula_23_windows_form
             InitializeComponent();
         }
 
+        // Dispara essa mensagebox antes de mostrar o formulário
         private void FrmShow_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Iniciando o formulário do FrmShow!!!\nRocco Foda!!!");
         }
     }
 }
