@@ -32,13 +32,15 @@
             this.txt_resultado = new System.Windows.Forms.TextBox();
             this.btn_ok = new System.Windows.Forms.Button();
             this.btnAbrir = new System.Windows.Forms.Button();
+            this.cboEstados = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(59, 88);
+            this.label1.Location = new System.Drawing.Point(59, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(394, 24);
             this.label1.TabIndex = 0;
@@ -46,7 +48,7 @@
             // 
             // txt_resultado
             // 
-            this.txt_resultado.Location = new System.Drawing.Point(63, 125);
+            this.txt_resultado.Location = new System.Drawing.Point(63, 74);
             this.txt_resultado.Name = "txt_resultado";
             this.txt_resultado.Size = new System.Drawing.Size(390, 20);
             this.txt_resultado.TabIndex = 1;
@@ -54,7 +56,7 @@
             // 
             // btn_ok
             // 
-            this.btn_ok.Location = new System.Drawing.Point(63, 177);
+            this.btn_ok.Location = new System.Drawing.Point(63, 244);
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.Size = new System.Drawing.Size(390, 37);
             this.btn_ok.TabIndex = 2;
@@ -64,7 +66,7 @@
             // 
             // btnAbrir
             // 
-            this.btnAbrir.Location = new System.Drawing.Point(63, 280);
+            this.btnAbrir.Location = new System.Drawing.Point(63, 320);
             this.btnAbrir.Name = "btnAbrir";
             this.btnAbrir.Size = new System.Drawing.Size(302, 31);
             this.btnAbrir.TabIndex = 3;
@@ -72,11 +74,37 @@
             this.btnAbrir.UseVisualStyleBackColor = true;
             this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click);
             // 
+            // cboEstados
+            // 
+            this.cboEstados.FormattingEnabled = true;
+            this.cboEstados.Items.AddRange(new object[] {
+            "SP",
+            "RJ",
+            "MG",
+            "GO"});
+            this.cboEstados.Location = new System.Drawing.Point(63, 158);
+            this.cboEstados.Name = "cboEstados";
+            this.cboEstados.Size = new System.Drawing.Size(390, 21);
+            this.cboEstados.TabIndex = 4;
+            this.cboEstados.Text = "[Selecione]";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(59, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Estados";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 386);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboEstados);
             this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.btn_ok);
             this.Controls.Add(this.txt_resultado);
@@ -95,6 +123,8 @@
         private System.Windows.Forms.TextBox txt_resultado;
         private System.Windows.Forms.Button btn_ok;
         private System.Windows.Forms.Button btnAbrir;
+        private System.Windows.Forms.ComboBox cboEstados;
+        private System.Windows.Forms.Label label2;
     }
 }
 
