@@ -10,43 +10,7 @@ using System.Windows.Forms;
 
 namespace Aula_23_windows_form
 {
-    public class Estado
-    {
-        public int Id;
-        public string Nome;
-
-        public override string ToString()
-        {
-            return this.Nome;
-        }
-
-        public static List<Estado> Lista()
-        {
-            var lista = new List<Estado>();
-            var e1 = new Estado();
-            e1.Id = 1;
-            e1.Nome = "SP";
-            lista.Add(e1);
-
-            e1 = new Estado();
-            e1.Id = 2;
-            e1.Nome = "RJ";
-            lista.Add(e1);
-
-            e1 = new Estado();
-            e1.Id = 3;
-            e1.Nome = "MG";
-            lista.Add(e1);
-
-            e1 = new Estado();
-            e1.Id = 4;
-            e1.Nome = "GO";
-            lista.Add(e1);
-
-            return lista;
-        }
-
-    }
+    
 
     public partial class Form1 : Form
     
@@ -67,13 +31,34 @@ namespace Aula_23_windows_form
         private void Form1_Load(object sender, EventArgs e)
         {
             // Chama o Objeto Estado e retorna a lista dos estados cadastrados. 
-            cboEstados.Items.Clear();
-            foreach (Estado estado in Estado.Lista())
-            {
-                cboEstados.Items.Add(estado);
-            }
+            cboEstados.DataSource = Estado.Lista();
+            cboEstados.Text = "[Selecione]";
 
-            
+            //==============================================================================
+
+            // Maneira simples
+            //dataGridView.DataSource = Estado.Lista();
+
+            // Maneira intermediaria utilizando o link
+            var data = from estado in Estado.Lista()
+                           // where estado.Id == 1
+                       orderby estado.Nome
+                       select new
+                       {
+                           Id = estado.Id,
+                           Nome = estado.Nome
+
+                       };
+
+            dataGridView.DataSource = data.ToList();
+
+            //cboEstados.Items.Clear();
+            //foreach (Estado estado in Estado.Lista())
+            //{
+            //    cboEstados.Items.Add(estado);
+            //}
+
+
             //MessageBox.Show("Iniciando o formulário aplicação 1.");
         }
 
