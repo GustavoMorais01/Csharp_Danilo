@@ -81,5 +81,38 @@ namespace Aula_23_windows_form
             form.Show();
 
         }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Frmtexto().Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Para chamar formularios instanciar o formulario desejado como objeto e chamar o objeto show();
+            new FrmSobre().Show();
+        }
+
+        private void licençaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Para chamar formularios instanciar o formulario desejado como objeto e chamar o objeto show();
+            new FrmLicenca().Show();
+        }
+
+        private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Para chamar formularios instanciar o formulario desejado como objeto e chamar o objeto show();
+            new FrmDoacao().Show();
+        }
     }
 }
