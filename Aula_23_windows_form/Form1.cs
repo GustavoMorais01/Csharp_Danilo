@@ -30,6 +30,8 @@ namespace Aula_23_windows_form
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            atualizaHora();
+                        
             // Chama o Objeto Estado e retorna a lista dos estados cadastrados. 
             cboEstados.DataSource = Estado.Lista();
             cboEstados.Text = "[Selecione]";
@@ -60,6 +62,13 @@ namespace Aula_23_windows_form
 
 
             //MessageBox.Show("Iniciando o formulário aplicação 1.");
+        }
+
+        private void atualizaHora()
+        {
+            // Mês e hora com letras maiúsculas
+            lblHoraAtual.Text = "Data/Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
         }
 
         private void btn_ok_Click(object sender, EventArgs e)
@@ -113,6 +122,11 @@ namespace Aula_23_windows_form
         {
             // Para chamar formularios instanciar o formulario desejado como objeto e chamar o objeto show();
             new FrmDoacao().Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            atualizaHora();
         }
     }
 }
