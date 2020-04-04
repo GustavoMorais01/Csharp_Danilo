@@ -28,8 +28,33 @@ namespace Aula_23_windows_form
             InitializeComponent();// Inicia todos os componentes da aplicação
         }
 
+        private void abrirLerArquivo_Click(object sender, EventArgs e)
+        {
+            new Frmtexto().Show();
+        }
+
+        private void fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void abrir_Cadastro_Click(object sender, EventArgs e)
+        {
+            // Instancia o formulário de cadastro e mostra o formulario cadastro quando clicar
+            new FrmCadastro().Show();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Cria variavel e instancia
+            var contextMenu = new ContextMenu();
+            // Dentro da instancia ele manda fazer ações como adicionar itens ao menu
+            contextMenu.MenuItems.Add(new MenuItem("Abrir Ler Arquivo", abrirLerArquivo_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", abrir_Cadastro_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Fechar", fechar_Click));
+            notifyIcon.ContextMenu = contextMenu;
+
+
             atualizaHora();
                         
             // Chama o Objeto Estado e retorna a lista dos estados cadastrados. 
@@ -133,6 +158,26 @@ namespace Aula_23_windows_form
         {
             // Criando nova instancia para fazer a chamada do formulário
             new FrmCadastro().Show();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void notifyIcon_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Cliquei no ícone\nRocco Foda!");
+        }
+
+        private void notifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Dois cliques no ícone\nIsso ai camarada!!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            notifyIcon.ShowBalloonTip(10, "Notificação", txt_resultado.Text,ToolTipIcon.Info);
         }
     }
 }
