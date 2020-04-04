@@ -128,5 +128,11 @@ namespace Aula_23_windows_form
         {
             atualizaHora();
         }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Criando nova instancia para fazer a chamada do formulário
+            new FrmCadastro().Show();
+        }
     }
 }
