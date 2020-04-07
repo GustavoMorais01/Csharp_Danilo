@@ -123,7 +123,11 @@ namespace Aula_23_windows_form
 
         private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new Frmtexto().Show();
+            // Abrindo o novo arquivo de texto dentro do mdiParent
+            // Foi criado uma nova classe singleton que faz a chamada =
+            var frmtexto = new Frmtexto();
+            frmtexto.MdiParent = MDISingleton.InstanciaMDI(); 
+            frmtexto.Show();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -178,6 +182,12 @@ namespace Aula_23_windows_form
         private void button1_Click(object sender, EventArgs e)
         {
             notifyIcon.ShowBalloonTip(10, "Notificação", txt_resultado.Text,ToolTipIcon.Info);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            // Criando instancia para chamar o MDI Parental Form
+            new MDIParentPrincipal().Show();
         }
     }
 }

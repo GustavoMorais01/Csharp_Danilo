@@ -52,6 +52,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.bntNotificacao = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -250,11 +251,22 @@
             this.bntNotificacao.UseVisualStyleBackColor = true;
             this.bntNotificacao.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(419, 320);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 408);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.bntNotificacao);
             this.Controls.Add(this.lblHoraAtual);
             this.Controls.Add(this.lblNomeGrid);
@@ -303,6 +315,7 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.Button bntNotificacao;
+        private System.Windows.Forms.Button button1;
     }
 }
 
