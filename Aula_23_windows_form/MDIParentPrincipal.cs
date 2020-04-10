@@ -78,5 +78,12 @@ namespace Aula_23_windows_form
             form1.MdiParent = this;
             form1.Show();
         }
+
+        private void MDIParentPrincipal_Load(object sender, EventArgs e)
+        {
+            var form = new FrmCadastro();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

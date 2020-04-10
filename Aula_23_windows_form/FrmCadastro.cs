@@ -65,8 +65,26 @@ namespace Aula_23_windows_form
                 MessageBox.Show("Todas as exceções foram tratadas");
             }
         }
+
+        private void maskedTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.MaskCompleted)
+            {
+                MessageBox.Show("Máscara completa!");
+            }
+            else
+            {
+                MessageBox.Show("Máscara incompleta!");
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(maskedTextBox1.Text);
+        }
     }
-    
+
     public class ErroDeProposito : Exception
     {
         public ErroDeProposito(string erro) : base(erro)
