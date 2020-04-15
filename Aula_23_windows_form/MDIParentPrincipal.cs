@@ -85,5 +85,12 @@ namespace Aula_23_windows_form
             form.MdiParent = this;
             form.Show();
         }
+
+        private void progressBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new FrmImportador();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
