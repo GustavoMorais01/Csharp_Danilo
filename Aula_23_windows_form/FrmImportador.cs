@@ -40,7 +40,7 @@ namespace Aula_23_windows_form
                 var line = lines[i];
                 progressBar.Value = (i + 1);
 
-                txtLogs.Text = "Todos os logs importados!";
+                txtLogs.Text = "Todos os logs importados!'";
 
                 // Assim mostra todos os logs.
                 //txtLogs.Text += line + " - " + i + " - importado\n";
