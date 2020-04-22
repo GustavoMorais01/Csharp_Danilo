@@ -80,6 +80,18 @@
     <Compile Include="FrmLicenca.Designer.cs">
       <DependentUpon>FrmLicenca.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPanel.Designer.cs">
+      <DependentUpon>FrmPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabControl.Designer.cs">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmtexto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,11 +134,17 @@
     <EmbeddedResource Include="FrmLicenca.resx">
       <DependentUpon>FrmLicenca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPanel.resx">
+      <DependentUpon>FrmPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmShow.resx">
       <DependentUpon>FrmShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSobre.resx">
       <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabControl.resx">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frmtexto.resx">
       <DependentUpon>Frmtexto.cs</DependentUpon>

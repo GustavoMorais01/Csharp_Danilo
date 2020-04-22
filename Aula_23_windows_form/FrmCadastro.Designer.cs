@@ -170,7 +170,7 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.menuToolStripMenuItem.Text = "01_Menu";
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
@@ -179,13 +179,13 @@
             this.menuToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.filhoMenuToolStripMenuItem});
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
-            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.menuToolStripMenuItem1.Text = "02_Menu";
             // 
             // filhoMenuToolStripMenuItem
             // 
             this.filhoMenuToolStripMenuItem.Name = "filhoMenuToolStripMenuItem";
-            this.filhoMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.filhoMenuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.filhoMenuToolStripMenuItem.Text = "Menu_filho";
             // 
             // toolStripSeparator1
@@ -242,6 +242,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmCadastro";
             this.Text = "FrmCadastro";
+            this.Load += new System.EventHandler(this.FrmCadastro_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

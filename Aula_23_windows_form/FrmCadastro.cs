@@ -93,6 +93,11 @@ namespace Aula_23_windows_form
         {
 
         }
+
+        private void FrmCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class ErroDeProposito : Exception

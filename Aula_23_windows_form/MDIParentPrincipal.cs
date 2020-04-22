@@ -92,5 +92,15 @@ namespace Aula_23_windows_form
             form.MdiParent = this;
             form.Show();
         }
+
+        private void panelTabControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmPanel().Show();
+        }
+
+        private void tabControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmTabControl().Show();
+        }
     }
 }
