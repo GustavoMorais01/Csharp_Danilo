@@ -102,5 +102,10 @@ namespace Aula_23_windows_form
         {
             new FrmTabControl().Show();
         }
+
+        private void treToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmTree().Show();
+        }
     }
 }

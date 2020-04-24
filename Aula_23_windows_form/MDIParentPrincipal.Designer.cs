@@ -39,6 +39,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelTabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.treToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
             this.panelTabControlToolStripMenuItem,
-            this.tabControlToolStripMenuItem});
+            this.tabControlToolStripMenuItem,
+            this.treToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(849, 24);
@@ -128,6 +130,13 @@
             this.tabControlToolStripMenuItem.Text = "TabControl";
             this.tabControlToolStripMenuItem.Click += new System.EventHandler(this.tabControlToolStripMenuItem_Click);
             // 
+            // treToolStripMenuItem
+            // 
+            this.treToolStripMenuItem.Name = "treToolStripMenuItem";
+            this.treToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.treToolStripMenuItem.Text = "TreeView";
+            this.treToolStripMenuItem.Click += new System.EventHandler(this.treToolStripMenuItem_Click);
+            // 
             // MDIParentPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,6 +169,7 @@
         private System.Windows.Forms.ToolStripMenuItem progressBarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem panelTabControlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem treToolStripMenuItem;
     }
 }
 
