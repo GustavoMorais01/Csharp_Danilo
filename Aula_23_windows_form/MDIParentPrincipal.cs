@@ -107,5 +107,10 @@ namespace Aula_23_windows_form
         {
             new FrmTree().Show();
         }
+
+        private void webBronwserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new FrmWebBronwser().Show();
+        }
     }
 }

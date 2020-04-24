@@ -40,6 +40,7 @@
             this.panelTabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.treToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.webBronwserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,8 @@
             this.fileMenu,
             this.panelTabControlToolStripMenuItem,
             this.tabControlToolStripMenuItem,
-            this.treToolStripMenuItem});
+            this.treToolStripMenuItem,
+            this.webBronwserToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(849, 24);
@@ -137,6 +139,13 @@
             this.treToolStripMenuItem.Text = "TreeView";
             this.treToolStripMenuItem.Click += new System.EventHandler(this.treToolStripMenuItem_Click);
             // 
+            // webBronwserToolStripMenuItem
+            // 
+            this.webBronwserToolStripMenuItem.Name = "webBronwserToolStripMenuItem";
+            this.webBronwserToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.webBronwserToolStripMenuItem.Text = "WebBronwser";
+            this.webBronwserToolStripMenuItem.Click += new System.EventHandler(this.webBronwserToolStripMenuItem_Click);
+            // 
             // MDIParentPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +179,7 @@
         private System.Windows.Forms.ToolStripMenuItem panelTabControlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem treToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem webBronwserToolStripMenuItem;
     }
 }
 
